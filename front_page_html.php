@@ -33,13 +33,21 @@
 //		print $this->render("Front/featured_set_slideshow_html.php");
 ?>
 <body>
-	<!-- Commented 10/5/2023 -->
-    <span class='frontSlide'><a href="/Detail/objects/1079"><img src="http://collections.louisahistory.org/pawtucket/themes/LCHS/assets/pawtucket/graphics/2022.016.0011A.tif" width="700" height="540" alt="Schara Tzedeck Shoah survivors tribute book" /></a><div class='frontSlideCaption'><a href="/Detail/objects/7669">Schara Tzedeck Shoah survivors tribute book</a>, [2019]</div>
- </span>
-	<span class='frontSlide'><a href="/Detail/objects/1079"><img src="http://collections.louisahistory.org/pawtucket/themes/LCHS/assets/pawtucket/graphics/Center Photo.jpg" width="700" height="540" alt="Schara Tzedeck Shoah survivors tribute book" /></a><div class='frontSlideCaption'><a href="/Detail/objects/7669">Schara Tzedeck Shoah survivors tribute book</a>, [2019]</div>
- </span>
-            <span class='frontSlide'><a href="/Detail/objects/1079"><img src="http://collections.louisahistory.org/pawtucket/themes/LCHS/assets/pawtucket/graphics/1973.1.1_A.jpg" width="700" height="540" alt="Schara Tzedeck Shoah survivors tribute book" /></a><div class='frontSlideCaption'><a href="/Detail/objects/7669">Schara Tzedeck Shoah survivors tribute book</a>, [2019]</div>
- </span>        
+	<!-- Added images 5/30/2023 -->
+<div class="container">
+    <div class="front-page">
+    <div class='frontSlide'><a href="/Detail/objects/1079"><img src="http://collections.louisahistory.org/pawtucket/themes/LCHS/assets/pawtucket/graphics/gallery/2022.016.0011a-x975.jpg
+    " width="634" height="975" alt="Schara Tzedeck Shoah survivors tribute book" /></a>
+        <div class='frontSlideCaption'><a href="/Detail/objects/7669">Schara Tzedeck Shoah survivors tribute book</a>, [2019]</div>
+    </div>
+    <div class='frontSlide'><a href="/Detail/objects/1079"><img src="http://collections.louisahistory.org/pawtucket/themes/LCHS/assets/pawtucket/graphics/gallery/center-photo-x975.jpg" width="1582" height="975" alt="Schara Tzedeck Shoah survivors tribute book" /></a>
+        <div class='frontSlideCaption'><a href="/Detail/objects/7669">Schara Tzedeck Shoah survivors tribute book</a>, [2019]</div>
+    </div>
+    <div class='frontSlide'><a href="/Detail/objects/1079"><img src="http://collections.louisahistory.org/pawtucket/themes/LCHS/assets/pawtucket/graphics/gallery/1973.1.1_a-x975.jpg" width="923" height="975" alt="Schara Tzedeck Shoah survivors tribute book" /></a>
+        <div class='frontSlideCaption'><a href="/Detail/objects/7669">Schara Tzedeck Shoah survivors tribute book</a>, [2019]</div>
+    </div> 
+    </div>
+ </div>       
 <div class="row">
     <div class="col-sm-12">
 <p class='homeDesc'><p>The Louisa County Historical Society welcomes you to explore our collections of historical documents, artifacts, photographs, and genealogical materials held at the Sargeant Museum of Louisa County History, located in Louisa, Virginia.</p>
@@ -78,13 +86,15 @@
         </div>
         
         <div style="clear:both; height:1px;"><!-- empty --></div>
-    </div><!-- end footer -->
+    </div>
+    <!-- end footer -->
+    <!--
             <div id="caMediaPanel"> 
         <div id="caMediaPanelContentArea">
         
         </div>
     </div>
-    <script type="text/javascript">
+     <script type="text/javascript">
         /*
             Set up the "caMediaPanel" panel that will be triggered by links in object detail
             Note that the actual <div>'s implementing the panel are located here in views/pageFormat/pageFooter.php
@@ -104,11 +114,11 @@
                 });
             }
         });
-        /*(function(e,d,b){var a=0;var f=null;var c={x:0,y:0};e("[data-toggle]").closest("li").on("mouseenter",function(g){if(f){f.removeClass("open")}d.clearTimeout(a);f=e(this);a=d.setTimeout(function(){f.addClass("open")},b)}).on("mousemove",function(g){if(Math.abs(c.x-g.ScreenX)>4||Math.abs(c.y-g.ScreenY)>4){c.x=g.ScreenX;c.y=g.ScreenY;return}if(f.hasClass("open")){return}d.clearTimeout(a);a=d.setTimeout(function(){f.addClass("open")},b)}).on("mouseleave",function(g){d.clearTimeout(a);f=e(this);a=d.setTimeout(function(){f.removeClass("open")},b)})})(jQuery,window,200);*/
-    </script>
+        (function(e,d,b){var a=0;var f=null;var c={x:0,y:0};e("[data-toggle]").closest("li").on("mouseenter",function(g){if(f){f.removeClass("open")}d.clearTimeout(a);f=e(this);a=d.setTimeout(function(){f.addClass("open")},b)}).on("mousemove",function(g){if(Math.abs(c.x-g.ScreenX)>4||Math.abs(c.y-g.ScreenY)>4){c.x=g.ScreenX;c.y=g.ScreenY;return}if(f.hasClass("open")){return}d.clearTimeout(a);a=d.setTimeout(function(){f.addClass("open")},b)}).on("mouseleave",function(g){d.clearTimeout(a);f=e(this);a=d.setTimeout(function(){f.removeClass("open")},b)})})(jQuery,window,200);
+    </script> -->
     </body>
 <?php
-		print $this->render("Front/gallery_set_links_html.php");
+//		print $this->render("Front/gallery_set_links_html.php");
 ?>
 		</div> <!--end col-sm-4-->	
 	</div><!-- end row -->

@@ -1,0 +1,29 @@
+/* Child theme LCHS */
+:root {
+	--primary, #262626;
+	--white: #ffffff;
+  }
+/* Resize logo */
+.navbar-brand {
+    width: 8rem;
+}
+.navbar-brand img {
+    width: 5rem;
+}
+body {
+	color: var(--primary);
+	font-size: 16px;
+	font-weight: 600;
+}
+.front-page {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1rem;
+}
+.navbar-header {
+	background: #014421;
+}
+.lchs-byline {
+	color: white;
+}
